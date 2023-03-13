@@ -1,0 +1,301 @@
+.buttons {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons a {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.buttons a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+}
+
+.buttons a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.buttons a:hover {
+  color: #ffffff;
+}
+.follow-us {
+  display: inline-flexbox;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 25rem;
+}
+
+.follow-us a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #00ff00;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease-in-out;
+  padding-bottom: 5px;
+}
+
+.follow-us a:hover {
+  transform: scale(1.2);
+  border-bottom: 1px solid #00ff00;
+}
+
+.follow-us img {
+  width: 50px;
+  height: 50px;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  color: rgb(231, 231, 231);
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styles for the main content */
+/*main {
+  margin: 2rem auto;
+  max-width: 800px;
+  text-align: justify;
+  font-size: 1.2rem;
+}*/
+main {
+  margin: 2rem auto;
+  max-width: 800px;
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #fff;
+  /* set text color to white */
+  font-family: 'Roboto', sans-serif;
+  /* use a sci-fi font */
+  line-height: 1.5;
+  /* increase line height for readability */
+  letter-spacing: 0.1em;
+  /* add letter spacing for a futuristic look */
+  text-shadow: 2px 2px #000;
+  /* add a subtle text shadow */
+  transition: all 0.3s ease-in-out;
+  /* add a smooth transition on hover */
+}
+
+main:hover {
+  transform: translateY(-5px);
+  /* add a subtle hover effect */
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    font-size: 1rem;
+    /* decrease font size on smaller screens */
+  }
+}
+
+
+section {
+  display: inline-block;
+  padding: 1rem;
+  justify-content: space-between;
+  vertical-align: top;
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+section h2 {
+  font-size: 2.5rem;
+  text-align: left;
+  color: #ffffff;
+  margin: 2rem 0 1rem 0;
+}
+
+section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+section ul li {
+  margin-bottom: 1rem;
+}
+
+section ul li a {
+  color: #fff;
+  transition: color 0.2s ease-in-out;
+}
+
+section ul li a:hover {
+  color: #FFC600;
+}
+
+/* Add animation to the section when hovering */
+section:hover {
+  transform: translateY(-5px);
+}
+
+.latest-news {
+  bottom: 8px;
+  color: #ffffff;
+}
+
+.featured {
+  color: #ffffff;
+  bottom: 8px;
+}
+
+.last {
+  display: inline-block;
+}
+
+.idk {
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  position: absolute;
+  margin-bottom: 5rem;
+  right: 0;
+  margin: 1rem;
+  margin-right: 9rem;
+}
+
+.idk a:hover {
+  color: #FFC600;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  transition: border-bottom-color 0.2s ease-in-out;
+}
+
+footer a:hover {
+  border-bottom-color: transparent;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/* Keyframe Animations */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Orbitron';
+  src: url('Orbitron-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.intro {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Welcome {
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+  left: 3%;
+  top: 30%;
+  position: absolute;
+  display: flex;
+}
