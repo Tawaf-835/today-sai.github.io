@@ -111,8 +111,8 @@ main {
   line-height: 1.5;
   /* increase line height for readability */
   letter-spacing: 0.1em;
-  position: relative;
-  display: inline;
+  text-align: justify;
+  display: block;
   /* set text to inline */
   margin-top: 5rem;
   padding: 1rem;
@@ -126,6 +126,12 @@ main h2 {
   left: 0.5%;
 }
 
+.sndpara{
+  font-size: 1.2rem;
+  color: #fff;
+  position: relative;
+  left: 25%;
+}
 main p {
   margin-top: 2rem;
   margin-bottom: 2rem;
