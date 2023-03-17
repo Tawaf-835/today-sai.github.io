@@ -184,6 +184,22 @@ main p {
     margin-top: 20px;
     margin-left: 25rem;
   }
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    transition: border-bottom-color 0.2s ease-in-out;
+  }
 }
 
 section {
