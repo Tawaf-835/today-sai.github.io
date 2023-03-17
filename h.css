@@ -218,7 +218,9 @@ main p {
     font-size: 0.7rem;
     margin-top: 0.5rem;
     }
-
+    .img img {
+      max-width: 200px;
+    }
 }
   
   /* Adjust styles for section */
@@ -228,8 +230,8 @@ main p {
     padding: 1rem;
     border: none;
   }
-  .img{
-    width: auto;
+  .img img {
+    max-width: 100%;
     height: auto;
   }
   footer a:hover {
