@@ -224,7 +224,8 @@ main p {
     border: none;
   }
   .img{
-    size: 600 78 px;
+    width: auto;
+    height: auto;
   }
 }
 section {
