@@ -148,6 +148,7 @@ main p {
   a {
     text-decoration: none;
   }
+  
   /* Styles for header */
   header {
     background-image: url('header-bg.jpg');
