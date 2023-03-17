@@ -74,6 +74,7 @@
 body {
   font-family: 'Gilroy', sans-serif;
   color: rgb(231, 231, 231);
+  width: auto;
 }
 
 header h1 {
@@ -226,6 +227,14 @@ main p {
   .img{
     width: auto;
     height: auto;
+  }
+  footer a:hover {
+    border-bottom-color: transparent;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.8rem;
   }
 }
 section {
