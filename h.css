@@ -1,10 +1,7 @@
-/* Sci-fi theme */
-
-/* Button styles */
 .buttons {
   position: absolute;
-  top: 10%;
-  right: 5%;
+  top: 5%;
+  right: 3%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +15,7 @@
   background-color: transparent;
   font-size: 1.2rem;
   font-weight: bold;
-  color: white;
+  color: #fff;
   text-decoration: none;
   transition: all 0.5s ease;
   position: relative;
@@ -31,7 +28,7 @@
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: white;
+  background-color: #fff;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.5s ease;
@@ -42,7 +39,10 @@
   transform-origin: left;
 }
 
-/* Follow us styles */
+.buttons a:hover {
+  color: #ffffff;
+}
+
 .follow-us {
   display: inline-flexbox;
   justify-content: flex-end;
@@ -57,13 +57,13 @@
   text-decoration: none;
   color: #00ff00;
   font-size: 1.2rem;
-  transition: transform 0.2s ease-out;
-  border-bottom: 1px solid #00ff00;
+  transition: transform 0.2s ease-in-out;
   padding-bottom: 5px;
 }
 
 .follow-us a:hover {
   transform: scale(1.2);
+  border-bottom: 1px solid #00ff00;
 }
 
 .follow-us img {
@@ -71,19 +71,13 @@
   height: 50px;
 }
 
-/* General styles */
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #fff;
-  background-color: #000;
-  background-image: radial-gradient(#222, #000);
+  font-family: 'Gilroy', sans-serif;
+  color: rgb(231, 231, 231);
 }
 
 header h1 {
-  font-size: 4rem;
-  color: #00ff00;
-  text-align: center;
-  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+  font-size: 2rem;
 }
 
 nav ul {
@@ -96,31 +90,140 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #00ff00;
+  color: #fff;
   text-decoration: none;
-  font-size: 1.5rem;
-  transition: all 0.5s ease;
 }
 
-nav ul li a:hover {
-  color: #0ff;
-  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
-}
-
-/* Main content styles */
 main {
   margin: 2rem auto;
   max-width: 800px;
+  color: #fff;
+  /* set text color to white */
+  font-family: 'Gilroy', sans-serif;
+  /* use a sci-fi font */
+  line-height: 1.5;
+  /* increase line height for readability */
+  letter-spacing: 0.1em;
   text-align: justify;
+  display: block;
+  /* set text to inline */
+  margin-top: 2rem;
+  padding: 1rem;
+  padding-top: 2rem;
 }
 
-/* Main content styles */
-main {
-  margin: 2rem auto;
-  max-width: 800px;
-  text-align: justify;
+main h2 {
+  font-size: 2rem;
+  color: #fff;
+  position: relative;
+  left: 0.5%;
 }
 
+.sndpara{
+  font-size: 1.2rem;
+  color: #fff;
+  position: relative;
+  left: 25%;
+}
+
+main p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  left: 0.5%;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    font-size: 1rem;
+  }
+  
+  header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+  
+  .idk {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    position: absolute;
+    margin-bottom: 5rem;
+    margin: 1rem;
+    margin-right: 0;
+    left: 80%;
+  }
+  
+  .follow-us {
+    display: inline-flexbox;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 25rem;
+  }
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    transition: border-bottom-color 0.2s ease-in-out;
+  }
+  
+  /* Adjust styles for main content */
+  main {
+    font-size: 1rem;
+    margin-top: 5rem;
+    padding: 1rem;
+  }
+  
+  main h2 {
+    font-size: 1.5rem;
+    position: relative;
+    left: 0;
+  }
+  
+  .sndpara {
+    font-size: 1rem;
+    position: relative;
+    left: 0;
+  }
+  
+  main p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    left: 0;
+    text-align: justify;
+    font-size: 1rem;
+  }
+  
+  /* Adjust styles for section */
+  section {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    border: none;
+  }
+}
 section {
   display: inline-block;
   padding: 1rem;
@@ -128,12 +231,14 @@ section {
   vertical-align: top;
   transition: transform 0.3s ease-out;
   transform: translateY(0);
+  border: 2px solid #fff;
+  border-radius: 13px;
 }
 
 section h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: left;
-  color: #00FFD1;
+  color: #ffffff;
   margin: 2rem 0 1rem 0;
 }
 
@@ -160,15 +265,19 @@ section ul li a:hover {
 
 /* Add animation to the section when hovering */
 section:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px)scale(1.1);
+  border-bottom: 5px solid #8b8b8b;
+  border: 2px solid #8b8b8b;
 }
 
 .latest-news {
-  color: #00FFD1;
+  bottom: 8px;
+  color: #ffffff;
 }
 
 .featured {
-  color: #00FFD1;
+  color: #ffffff;
+  bottom: 8px;
 }
 
 .last {
@@ -181,10 +290,10 @@ section:hover {
   text-align: center;
   font-size: 1.2rem;
   position: absolute;
-  bottom: 50px;
-  right: 0;
+  margin-bottom: 5rem;
   margin: 1rem;
-  margin-right: 7rem;
+  margin-right: 0;
+  left: 82%;
 }
 
 .idk a:hover {
@@ -223,22 +332,32 @@ footer p {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
 
 @keyframes shake {
-  10%, 90% {
+
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
-  20%, 80% {
+
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
-  30%, 50%, 70% {
+
+  30%,
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0);
   }
-  40%, 60% {
+
+  40%,
+  60% {
     transform: translate3d(4px, 0, 0);
   }
 }
@@ -251,7 +370,6 @@ footer p {
   font-style: normal;
 }
 
-/* Background Video */
 #bg-video {
   position: fixed;
   top: 0;
@@ -262,10 +380,18 @@ footer p {
   z-index: -1;
 }
 
-/* Intro */
 .intro {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.Welcome {
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+  left: 3%;
+  top: 30%;
+  position: absolute;
+  display: flex;
 }
