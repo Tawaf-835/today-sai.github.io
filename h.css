@@ -223,6 +223,9 @@ main p {
     padding: 1rem;
     border: none;
   }
+  .img{
+    size: 50%;
+  }
 }
 section {
   display: inline-block;
