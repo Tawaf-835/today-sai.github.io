@@ -291,9 +291,11 @@ footer {
   }
 
   .img img {
-    max-width: 100%;
+    max-width: 50%;
   }
-
+.img img {
+    max-width: 70%;
+  }
   .idk {
     font-size: 1.5rem;
     position: static;
