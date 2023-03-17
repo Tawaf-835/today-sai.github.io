@@ -137,15 +137,23 @@ main p {
 }
 
 @media screen and (max-width: 768px) {
-  main {
-    font-size: 1rem;
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
   }
   
+  a {
+    text-decoration: none;
+  }
+  
+  /* Styles for header */
   header {
     background-image: url('header-bg.jpg');
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 600px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -156,7 +164,7 @@ main p {
     font-family: 'Orbitron', sans-serif;
     color: #fff;
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
     position: absolute;
     margin-bottom: 5rem;
     margin: 1rem;
@@ -165,57 +173,45 @@ main p {
   }
   
   .follow-us {
-    display: inline-flexbox;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-top: 20px;
     margin-left: 25rem;
   }
   
-  footer {
-    background-color: #222;
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  .follow-us a {
+    margin-left: 20px;
   }
   
-  footer a {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 1px solid #fff;
-    transition: border-bottom-color 0.2s ease-in-out;
-  }
-  
-  /* Adjust styles for main content */
+  /* Styles for main content */
   main {
-    font-size: 1rem;
-    margin-top: 5rem;
-    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
   }
   
   main h2 {
-    font-size: 1.5rem;
-    position: relative;
-    left: 0;
+    font-size: 3rem;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 2rem;
   }
   
   .sndpara {
-    font-size: 1rem;
-    position: relative;
-    left: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
   }
   
   main p {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    position: relative;
-    left: 0;
     text-align: justify;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
+  
+}
   
   /* Adjust styles for section */
   section {
@@ -236,7 +232,6 @@ main p {
     margin: 0;
     font-size: 0.8rem;
   }
-}
 section {
   display: inline-block;
   padding: 1rem;
