@@ -56,33 +56,34 @@ header {
 
 /* Navigation styles */
 nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
 }
 
 nav ul {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 nav li {
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding: 20px;
   transition: all 0.5s ease;
   position: relative;
 }
@@ -104,6 +105,11 @@ nav a:hover:before {
   transform: scaleX(1);
   transform-origin: left;
 }
+
+nav a:hover {
+  color: #ffffff;
+}
+
 
 /* Main content styles */
 .main-content {
@@ -145,25 +151,6 @@ nav a:hover:before {
   transform: scale(1.05);
   background: #222222;
 }
-
-/*.about{
-    display: absolute;
-    justify-content: center;
-    text-align: center;
-    font-family: sans-serif;
-    padding: 2rem;
-    border: 2px solid #ddd;
-    width: 80%;
-    border-radius: 10px;
-    border-bottom: 5px solid #ddd;
-    
-  }*/
-
-/* .about:hover{
-      transform: translateY(-5px) scale(1.1);
-      transition: 0.3s ease-in-out;
-      background: #1c1c1c;
-  }*/
 .about h1 {
   font-size: 40px;
 }
@@ -268,9 +255,46 @@ footer {
 }
 
 .img {
-  position: absolute;
-  top: 5%;
-  /* adjust this value as needed */
-  left: 25%;
-  transform: translateX(-50%);
+  text-align: left;
+  position: relative;
+}
+
+.img img {
+  max-width: 100%;
+  height: auto;
+}
+/* responsiveness */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  a {
+    text-decoration: none;
+  }
+   /* Styles for header */
+   header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+
+  .img img {
+    max-width: 50%;
+  }
+    .idk {
+    font-size: 1.5rem;
+    position: static;
+    margin-bottom: 2rem;
+    margin-right: 0;
+    left: auto;
+  }
 }
