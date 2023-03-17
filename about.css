@@ -151,6 +151,7 @@ nav a:hover {
   transform: scale(1.05);
   background: #222222;
 }
+
 .about h1 {
   font-size: 40px;
 }
@@ -263,6 +264,7 @@ footer {
   max-width: 100%;
   height: auto;
 }
+
 /* responsiveness */
 @media screen and (max-width: 768px) {
   body {
@@ -275,8 +277,9 @@ footer {
   a {
     text-decoration: none;
   }
-   /* Styles for header */
-   header {
+
+  /* Styles for header */
+  header {
     background-image: url('header-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -288,9 +291,10 @@ footer {
   }
 
   .img img {
-    max-width: 50%;
+    max-width: 70%;
   }
-    .idk {
+
+  .idk {
     font-size: 1.5rem;
     position: static;
     margin-bottom: 2rem;
