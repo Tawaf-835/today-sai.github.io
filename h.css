@@ -275,7 +275,8 @@ section {
 }
 
 .img {
-  text-align: center;
+  text-align: left;
+  position: relative;
 }
 
 .img img {
@@ -460,6 +461,6 @@ footer p {
   font-size: medium;
   left: 3%;
   top: 30%;
-  position: absolute;
+  position: relative;
   display: flex;
 }
