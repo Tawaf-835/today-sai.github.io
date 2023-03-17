@@ -120,7 +120,7 @@ main h2 {
   left: 0.5%;
 }
 
-.sndpara{
+.sndpara {
   font-size: 1.2rem;
   color: #fff;
   position: relative;
@@ -143,11 +143,11 @@ main p {
     font-size: 16px;
     line-height: 1.5;
   }
-  
+
   a {
     text-decoration: none;
   }
-  
+
   /* Styles for header */
   header {
     background-image: url('header-bg.jpg');
@@ -159,89 +159,139 @@ main p {
     align-items: center;
     position: relative;
   }
-  
+
+  .img img {
+    max-width: 50%;
+  }
+
   .idk {
     font-size: 1.5rem;
     position: static;
     margin-bottom: 2rem;
     margin-right: 0;
     left: auto;
-    }
-    
-    .follow-us {
+  }
+
+  .follow-us {
     justify-content: center;
     margin-top: 10px;
     margin-left: 0;
-    }
-    
-    .follow-us a {
+  }
+
+  .follow-us a {
     margin: 0 10px;
-    }
-  
+  }
+
   /* Styles for main content */
   main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
   }
-  
+
   main h2 {
     font-size: 3rem;
     text-align: center;
     color: #ffffff;
     margin-bottom: 2rem;
   }
-  
+
   .sndpara {
     font-size: 1.2rem;
     text-align: left;
     margin-bottom: 3rem;
   }
-  
+
   main p {
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: justify;
     font-size: 1.2rem;
   }
+
   footer {
     flex-direction: column;
     padding: 1rem;
-    }
-    
-    footer a {
+  }
+
+  footer a {
     display: block;
     margin-bottom: 0.5rem;
-    }
-    
-    footer p {
+  }
+
+  footer p {
     font-size: 0.7rem;
     margin-top: 0.5rem;
-    }
-    .img img {
-      max-width: 200px;
-    }
-}
-  
-  /* Adjust styles for section */
+  }
+
+  .img img {
+    max-width: 200px;
+  }
+
   section {
     display: block;
-    margin: 1rem;
     padding: 1rem;
-    border: none;
+    margin: 1rem 0;
+    border: 2px solid #fff;
+    border-radius: 13px;
   }
-  .img img {
-    max-width: 100%;
-    height: auto;
+
+  section h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+    margin: 1rem 0;
   }
-  footer a:hover {
-    border-bottom-color: transparent;
-  }
-  
-  footer p {
+
+  section ul {
+    list-style: none;
     margin: 0;
-    font-size: 0.8rem;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2rem;
   }
+
+  section ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  section ul li a {
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+  }
+
+  section ul li a:hover {
+    color: #FFC600;
+  }
+
+}
+
+/* Adjust styles for section */
+section {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  border: none;
+}
+
+.img {
+  text-align: center;
+}
+
+.img img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer a:hover {
+  border-bottom-color: transparent;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
 section {
   display: inline-block;
   padding: 1rem;
