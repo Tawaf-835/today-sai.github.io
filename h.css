@@ -210,7 +210,21 @@ main p {
     text-align: justify;
     font-size: 1.2rem;
   }
-  
+  footer {
+    flex-direction: column;
+    padding: 1rem;
+    }
+    
+    footer a {
+    display: block;
+    margin-bottom: 0.5rem;
+    }
+    
+    footer p {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    }
+
 }
   
   /* Adjust styles for section */
